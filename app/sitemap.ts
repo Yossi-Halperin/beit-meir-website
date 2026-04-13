@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://beit-meir.co.il";
 const locales = ["he", "en"];
-const routes = ["", "/about", "/location", "/lifestyle", "/community", "/contact", "/privacy"];
+const routes = ["", "/about", "/location", "/the-property", "/lifestyle", "/community", "/contact", "/privacy"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

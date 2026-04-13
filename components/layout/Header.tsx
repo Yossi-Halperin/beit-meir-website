@@ -26,6 +26,7 @@ export default function Header() {
   const navLinks = [
     { href: `/${locale}/about`, label: t("about") },
     { href: `/${locale}/location`, label: t("location") },
+    { href: `/${locale}/the-property`, label: isRTL ? 'הנכס' : 'The Property' },
     { href: `/${locale}/lifestyle`, label: t("lifestyle") },
     { href: `/${locale}/community`, label: t("community") },
     { href: `/${locale}/contact`, label: t("contact") },
