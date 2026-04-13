@@ -2,9 +2,6 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Watermark overlay component ───────────────────────────────────────────
@@ -14,117 +11,6 @@ function RenderingWatermark({ locale }: { locale: string }) {
       <span className="text-white/60 text-xs tracking-widest font-light bg-black/30 px-3 py-1 rounded-sm backdrop-blur-sm">
         {locale === 'he' ? "הדמיה בלבד / Artist's impression only" : "Artist's impression only / הדמיה בלבד"}
       </span>
-    </div>
-  );
-}
-
-// ─── Soft Gate Form ─────────────────────────────────────────────────────────
-const gateSchema = z.object({
-  name: z.string().min(2),
-  phone: z.string().min(7),
-  email: z.string().email(),
-});
-type GateFormData = z.infer<typeof gateSchema>;
-
-function SoftGate({ locale, onUnlock }: { locale: string; onUnlock: () => void }) {
-  const isHe = locale === 'he';
-  const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<GateFormData>({
-    resolver: zodResolver(gateSchema),
-  });
-
-  const onSubmit = async (data: GateFormData) => {
-    try {
-      await fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, source: 'property_gate', locale }),
-      });
-    } catch (_) {}
-    onUnlock();
-  };
-
-  return (
-    <div className="relative w-full bg-obsidian border border-brass/20 rounded-sm overflow-hidden">
-      {/* Blurred teaser strip */}
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src="/images/property/render-01-aerial.jpg"
-          alt="Property rendering preview"
-          fill
-          className="object-cover blur-md scale-110 opacity-60"
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian/20 to-obsidian/80" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-10 h-10 border border-brass/60 rounded-full flex items-center justify-center mx-auto mb-3">
-              <svg className="w-5 h-5 text-brass" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-            </div>
-            <p className="text-brass font-display text-lg">
-              {isHe ? '6 הדמיות אדריכליות' : '6 Architectural Renderings'}
-            </p>
-            <p className="text-ivory/50 text-sm mt-1">
-              {isHe ? 'השאר פרטים לצפייה מלאה' : 'Leave your details to view'}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Gate form */}
-      <div className="p-8">
-        <h3 className="font-display text-2xl text-ivory mb-2 text-center">
-          {isHe ? 'גישה להדמיות המלאות' : 'Access Full Renderings'}
-        </h3>
-        <p className="text-ivory/50 text-sm text-center mb-6">
-          {isHe
-            ? 'השאר פרטים ונשלח לך גישה מיידית לכל 6 ההדמיות האדריכליות'
-            : 'Leave your details for immediate access to all 6 architectural renderings'}
-        </p>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 max-w-md mx-auto">
-          <div>
-            <input
-              {...register('name')}
-              placeholder={isHe ? 'שם מלא' : 'Full Name'}
-              className="w-full bg-charcoal border border-brass/20 text-ivory placeholder-ivory/30 px-4 py-3 text-sm focus:outline-none focus:border-brass/60 transition-colors"
-              dir={isHe ? 'rtl' : 'ltr'}
-            />
-            {errors.name && <p className="text-red-400 text-xs mt-1">{isHe ? 'שם חובה' : 'Name required'}</p>}
-          </div>
-          <div>
-            <input
-              {...register('phone')}
-              placeholder={isHe ? 'טלפון' : 'Phone'}
-              className="w-full bg-charcoal border border-brass/20 text-ivory placeholder-ivory/30 px-4 py-3 text-sm focus:outline-none focus:border-brass/60 transition-colors"
-              dir="ltr"
-            />
-            {errors.phone && <p className="text-red-400 text-xs mt-1">{isHe ? 'טלפון חובה' : 'Phone required'}</p>}
-          </div>
-          <div>
-            <input
-              {...register('email')}
-              type="email"
-              placeholder={isHe ? 'אימייל' : 'Email'}
-              className="w-full bg-charcoal border border-brass/20 text-ivory placeholder-ivory/30 px-4 py-3 text-sm focus:outline-none focus:border-brass/60 transition-colors"
-              dir="ltr"
-            />
-            {errors.email && <p className="text-red-400 text-xs mt-1">{isHe ? 'אימייל חובה' : 'Email required'}</p>}
-          </div>
-          <button
-            type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-brass text-obsidian font-semibold tracking-widest uppercase text-sm py-4 hover:bg-brass-light transition-colors disabled:opacity-60"
-          >
-            {isSubmitting
-              ? (isHe ? 'שולח...' : 'Sending...')
-              : (isHe ? 'הצג הדמיות' : 'View Renderings')}
-          </button>
-          <p className="text-ivory/30 text-xs text-center">
-            {isHe ? 'אנחנו לא שולחים ספאם. פרטיך מאובטחים.' : 'No spam. Your details are secure.'}
-          </p>
-        </form>
-      </div>
     </div>
   );
 }
@@ -198,7 +84,6 @@ const factRows = [
 // ─── Main Client Component ───────────────────────────────────────────────────
 export default function ThePropertyClient({ locale }: { locale: string }) {
   const isHe = locale === 'he';
-  const [gateUnlocked, setGateUnlocked] = useState(false);
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
   const [activePlan, setActivePlan] = useState(0);
 
@@ -318,60 +203,41 @@ export default function ThePropertyClient({ locale }: { locale: string }) {
             </h2>
           </div>
 
-          <AnimatePresence mode="wait">
-            {!gateUnlocked ? (
+          <div className="space-y-6">
+            {renderings.map((r, i) => (
               <motion.div
-                key="gate"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                className="max-w-lg mx-auto"
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.6 }}
+                className="relative group cursor-pointer overflow-hidden"
+                onClick={() => setLightboxImg(r.src)}
               >
-                <SoftGate locale={locale} onUnlock={() => setGateUnlocked(true)} />
-              </motion.div>
-            ) : (
-              <motion.div
-                key="renderings"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.6 }}
-                className="space-y-6"
-              >
-                {renderings.map((r, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1, duration: 0.6 }}
-                    className="relative group cursor-pointer overflow-hidden"
-                    onClick={() => setLightboxImg(r.src)}
-                  >
-                    <div className="relative w-full aspect-[16/9]">
-                      <Image
-                        src={r.src}
-                        alt={isHe ? r.labelHe : r.labelEn}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        unoptimized
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent" />
-                      <RenderingWatermark locale={locale} />
-                      <div className="absolute bottom-8 left-6 right-6">
-                        <p className="text-ivory/80 text-sm tracking-wide">{isHe ? r.labelHe : r.labelEn}</p>
-                      </div>
-                      <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <div className="w-8 h-8 border border-white/40 rounded-sm flex items-center justify-center bg-black/30 backdrop-blur-sm">
-                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-                          </svg>
-                        </div>
-                      </div>
+                <div className="relative w-full aspect-[16/9]">
+                  <Image
+                    src={r.src}
+                    alt={isHe ? r.labelHe : r.labelEn}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    unoptimized
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-transparent to-transparent" />
+                  <RenderingWatermark locale={locale} />
+                  <div className="absolute bottom-8 left-6 right-6">
+                    <p className="text-ivory/80 text-sm tracking-wide">{isHe ? r.labelHe : r.labelEn}</p>
+                  </div>
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="w-8 h-8 border border-white/40 rounded-sm flex items-center justify-center bg-black/30 backdrop-blur-sm">
+                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                      </svg>
                     </div>
-                  </motion.div>
-                ))}
+                  </div>
+                </div>
               </motion.div>
-            )}
-          </AnimatePresence>
+            ))}
+          </div>
         </div>
       </section>
 
