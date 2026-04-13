@@ -1,0 +1,447 @@
+{
+  "meta": {
+    "home": {
+      "title": "Moshav Beit Meir | Luxury Land in the Judean Hills",
+      "description": "A rare opportunity to acquire land in an exclusive religious moshav, 20 minutes from Jerusalem, in the heart of the Martyrs' Forest. By personal inquiry only."
+    },
+    "about": {
+      "title": "About the Place | Moshav Beit Meir",
+      "description": "The story of Moshav Beit Meir — its history, community, nature, and heritage as one of the oldest religious moshavim in the Jerusalem corridor."
+    },
+    "location": {
+      "title": "Location | Moshav Beit Meir — 20 Minutes from Jerusalem",
+      "description": "Beit Meir is located in the heart of the Judean Hills, 20 minutes from the Western Wall, 25 minutes from Ben Gurion Airport, near Beit Shemesh and Mevaseret Zion."
+    },
+    "lifestyle": {
+      "title": "Lifestyle | Moshav Beit Meir",
+      "description": "Mediterranean mountain climate, the Martyrs' Forest, hiking trails, vineyards and mountain air — a life entirely different from the city."
+    },
+    "community": {
+      "title": "Community | Moshav Beit Meir",
+      "description": "A tight-knit religious community of about 200 families, with top-tier education, religious institutions, and neighbors of caliber."
+    },
+    "contact": {
+      "title": "Contact | Moshav Beit Meir",
+      "description": "For details on acquiring land in Moshav Beit Meir — fill out the form and we will be in touch within 24 hours."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Moshav Beit Meir",
+      "description": "Privacy policy for the Moshav Beit Meir website."
+    }
+  },
+  "nav": {
+    "about": "About",
+    "location": "Location",
+    "lifestyle": "Lifestyle",
+    "community": "Community",
+    "contact": "Contact",
+    "cta": "Request Information"
+  },
+  "hero": {
+    "overline": "MOSHAV BEIT MEIR · JUDEAN HILLS",
+    "headline1": "Twenty minutes from Jerusalem.",
+    "headline2": "A world",
+    "headline3": " away.",
+    "subline": "A rare opportunity to acquire land in an exclusive religious moshav in the heart of the Martyrs' Forest. For families seeking a home — not a property.",
+    "cta_primary": "Request Information",
+    "cta_secondary": "About the Place",
+    "scroll_hint": "Scroll"
+  },
+  "promise": {
+    "overline": "About the Place",
+    "line1": "Some places are sold through brochures.",
+    "line2": "Beit Meir is not one of them.",
+    "body": "One of the oldest and most respected religious moshavim in the Jerusalem corridor — a community of around 200 families, a 200-year-old forest just beyond the window, and twenty minutes from central Jerusalem. Opportunities to acquire land here are rare, and most transactions happen quietly."
+  },
+  "location_preview": {
+    "overline": "Location",
+    "heading": "Close to everything that matters.",
+    "subheading": "Far from everything that doesn't.",
+    "map_cta": "View Full Map",
+    "distances": [
+      {
+        "km": "10",
+        "label": "from Beit Shemesh",
+        "time": "~15 min",
+        "featured": false
+      },
+      {
+        "km": "15",
+        "label": "from Jerusalem",
+        "time": "~20 min",
+        "featured": false
+      },
+      {
+        "km": "20",
+        "label": "from the Western Wall",
+        "time": "~25 min",
+        "featured": true
+      },
+      {
+        "km": "30",
+        "label": "from Ben Gurion Airport",
+        "time": "~25 min",
+        "featured": false
+      },
+      {
+        "km": "50",
+        "label": "from Tel Aviv",
+        "time": "~45 min",
+        "featured": false
+      }
+    ]
+  },
+  "gallery": {
+    "overline": "The Place",
+    "heading": "In the Heart of the Martyrs' Forest",
+    "para1": "In the heart of the Martyrs' Forest, on the historic road from Tel Aviv to Jerusalem, lies Moshav Beit Meir.",
+    "para2": "Founded in 1950 by religious immigrants from Hungary and Romania as part of the Mizrachi movement, the moshav was named after Rabbi Meir Bar-Ilan. The historic Burma Road — the road that saved Jerusalem during the War of Independence — passes alongside it.",
+    "para3": "Today, Beit Meir is a tight-knit religious community of about 200 families. Its setting — the HaMasrek Reserve with its 170-year-old Jerusalem pines, and dozens of hiking trails winding through the Judean Hills — turns every morning here into something else entirely. The vineyards of a local winery climb the hillsides around the moshav, a quiet testament to the soil, the mountain air, and the climate that set this region apart."
+  },
+  "community": {
+    "overline": "Community",
+    "quote": "We weren't looking for a house. We were looking for a place. Beit Meir is that place.",
+    "quote_author": "Resident, 14 years in the moshav",
+    "pillars": [
+      {
+        "title": "Established Religious Community",
+        "body": "Founded by Mizrachi pioneers, continuous religious life since 1950, Bnei Akiva, multiple shuls and yeshivot nearby — Yeshivat Harei Yehuda, Ohr Yerushalayim, Ramot Shapira Educational Center."
+      },
+      {
+        "title": "Education at the Highest Level",
+        "body": "Walking distance to yeshiva, short drive to top religious schools in Jerusalem and Beit Shemesh. The Ramot Shapira Educational Center is located on the moshav itself."
+      },
+      {
+        "title": "Land, Forest, and Vine",
+        "body": "At ~650m elevation in the Jerusalem Hills, surrounded by the protected Martyrs' Forest, dozens of hiking trails out the back gate, and the vineyards of a local winery climbing the hillsides. The same soil and air that produce wine of this quality have raised generations of families here."
+      }
+    ]
+  },
+  "opportunity": {
+    "overline": "A RARE OPPORTUNITY",
+    "heading": "Land in a moshav like this does not sit on the open market.",
+    "body": "Conversations happen quietly, between people who know people. If you are reading these lines, it is likely we have information that will interest you. Completing the form below is the first step. A member of our team will reach out to you personally within 24 hours.",
+    "cta": "Leave Your Details"
+  },
+  "lead_form": {
+    "overline": "Contact",
+    "heading": "Leave Your Details",
+    "subheading": "We will be in touch within 24 hours.",
+    "fields": {
+      "name": "Full Name",
+      "name_placeholder": "Your full name",
+      "phone": "Phone",
+      "phone_placeholder": "+972 5X-XXXXXXX",
+      "email": "Email",
+      "email_placeholder": "your@email.com",
+      "preferred_contact": "Preferred Contact Method",
+      "whatsapp": "WhatsApp",
+      "phone_call": "Phone Call",
+      "email_contact": "Email",
+      "interest": "What interests you? (Optional)",
+      "interest_placeholder": "Tell us briefly what you are looking for...",
+      "consent": "I agree to be contacted regarding land opportunities in Moshav Beit Meir",
+      "submit": "Send Details",
+      "submitting": "Sending...",
+      "honeypot": "website"
+    },
+    "errors": {
+      "name_required": "Full name is required",
+      "name_min": "Name must be at least 2 characters",
+      "phone_required": "Phone number is required",
+      "phone_invalid": "Invalid phone number",
+      "email_required": "Email address is required",
+      "email_invalid": "Invalid email address",
+      "consent_required": "Please confirm your consent",
+      "interest_max": "Maximum 500 characters"
+    },
+    "success": {
+      "heading": "Thank you.",
+      "body": "We'll be in touch shortly.",
+      "whatsapp_cta": "Reach us directly on WhatsApp"
+    }
+  },
+  "footer": {
+    "tagline": "An exclusive religious moshav in the Judean Hills",
+    "links_heading": "Navigation",
+    "contact_heading": "Contact",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "copyright": "© 2025 Moshav Beit Meir. All rights reserved.",
+    "disclaimer": "Information on this website does not constitute a legally binding offer for the acquisition of real estate rights. All transactions are subject to a written agreement signed by both parties.",
+    "privacy": "Privacy Policy"
+  },
+  "about": {
+    "hero_overline": "About the Place",
+    "hero_heading": "A Place Born of Faith",
+    "founding_overline": "The Founding",
+    "founding_heading": "1950 — The Beginning",
+    "founding_body": "In 1950, religious immigrants from Hungary and Romania — pioneers of the Mizrachi movement — laid the foundations of Moshav Beit Meir. The moshav was named in honor of Rabbi Meir Bar-Ilan, one of the great leaders of religious Zionism and founder of the Mizrachi movement. From its earliest days, Beit Meir maintained its tight-knit religious character — a community built on the values of Torah, labor, and love of the Land.",
+    "burma_overline": "History",
+    "burma_heading": "The Burma Road",
+    "burma_body": "Adjacent to the moshav runs the Burma Road — one of the great stories of the War of Independence. In 1948, when Jerusalem was under siege, an alternative route was carved through the mountains that allowed the siege to be broken and supplies to reach the city. Beit Meir stood at the heart of that story. The historic road now runs as a marked trail alongside the moshav — and those who walk it feel the weight of history with every step.",
+    "land_overline": "The Land",
+    "land_heading": "The Martyrs' Forest",
+    "land_body": "The moshav sits in the heart of the Martyrs' Forest — a forest planted by the Jewish National Fund in memory of the victims of the Holocaust. Jerusalem pines 170 years old surround the moshav on all sides. The adjacent HaMasrek Reserve contains some of the oldest groves in the country. This is not merely beautiful surroundings — it is land that carries meaning.",
+    "nature_overline": "Nature",
+    "nature_heading": "Forest, Trail, and Vine",
+    "nature_body": "The moshav sits in the heart of one of Israel's most distinguished natural environments. The adjacent HaMasrek Reserve contains Jerusalem pines 170 years old — one of the oldest pine groves in the country. Dozens of marked hiking trails begin literally from the back gate of the moshav and wind through the Judean Hills. The vineyards of a local winery climb the hillsides around the moshav — a quiet testament to the quality of the soil, the mountain air, and the climate that set this region apart.",
+    "today_overline": "Today",
+    "today_heading": "A Community of ~200 Families",
+    "today_body": "Beit Meir today is a tight-knit religious community of about 200 families. Its residents — professionals, doctors, lawyers, business owners — commute to Jerusalem and beyond for work, and return in the evening to the quiet of the mountains. Turnover is low. People do not leave Beit Meir.",
+    "institutions_overline": "Institutions",
+    "institutions_heading": "Educational and Religious Infrastructure",
+    "institutions": [
+      {
+        "name": "Ramot Shapira Educational Center",
+        "desc": "Located on the moshav itself"
+      },
+      {
+        "name": "Yeshivat Harei Yehuda",
+        "desc": "Adjacent to the moshav"
+      },
+      {
+        "name": "Ohr Yerushalayim",
+        "desc": "Nearby"
+      },
+      {
+        "name": "Friedman Institute for Jewish Studies",
+        "desc": "In the area"
+      },
+      {
+        "name": "Leading Religious Schools",
+        "desc": "Jerusalem and Beit Shemesh — 20 minutes away"
+      }
+    ],
+    "cta_heading": "Interested in learning more?",
+    "cta_body": "Leave your details and we will be in touch within 24 hours."
+  },
+  "location_page": {
+    "hero_overline": "Location",
+    "hero_heading": "At the Heart of the Land",
+    "hero_subheading": "Close to everything that matters. Far from everything that doesn't.",
+    "map_heading": "Moshav Beit Meir",
+    "map_subheading": "Judean Hills, Israel",
+    "distances_overline": "Distances",
+    "distances_heading": "How far is everything?",
+    "distances": [
+      {
+        "destination": "Jerusalem (city center)",
+        "km": "15",
+        "time": "~20 min",
+        "featured": false
+      },
+      {
+        "destination": "The Western Wall",
+        "km": "20",
+        "time": "~25 min",
+        "featured": true
+      },
+      {
+        "destination": "Ben Gurion Airport",
+        "km": "30",
+        "time": "~25 min",
+        "featured": false
+      },
+      {
+        "destination": "Beit Shemesh",
+        "km": "10",
+        "time": "~15 min",
+        "featured": false
+      },
+      {
+        "destination": "Modi'in",
+        "km": "25",
+        "time": "~25 min",
+        "featured": false
+      },
+      {
+        "destination": "Tel Aviv",
+        "km": "50",
+        "time": "~45 min",
+        "featured": false
+      },
+      {
+        "destination": "Mevaseret Zion",
+        "km": "12",
+        "time": "~15 min",
+        "featured": false
+      },
+      {
+        "destination": "Dead Sea",
+        "km": "50",
+        "time": "~50 min",
+        "featured": false
+      }
+    ],
+    "how_overline": "Getting Here",
+    "how_heading": "The Road to the Moshav",
+    "how_body": "Exit Highway 1 at the Shoresh interchange, then take road 3955 toward Beit Meir. The drive from Jerusalem takes approximately 20 minutes. Bus lines 186, 615, and 617 connect the moshav to Jerusalem and Beit Shemesh.",
+    "around_overline": "What's Around You",
+    "around_heading": "The Surroundings",
+    "around": [
+      {
+        "name": "HaMasrek Reserve",
+        "desc": "Nature reserve with 170-year-old Jerusalem pines"
+      },
+      {
+        "name": "Burma Road",
+        "desc": "Historic trail from the War of Independence"
+      },
+      {
+        "name": "Sataf",
+        "desc": "National park with ancient agricultural terraces and springs"
+      },
+      {
+        "name": "Ein Hemed",
+        "desc": "National park and historic water source"
+      },
+      {
+        "name": "Beit Shemesh",
+        "desc": "Shopping, services, and urban center — 15 minutes"
+      },
+      {
+        "name": "Jerusalem",
+        "desc": "Cultural, religious, and business center — 20 minutes"
+      }
+    ],
+    "cta_heading": "Want to see the place?",
+    "cta_body": "Leave your details and we will arrange a personal visit."
+  },
+  "lifestyle_page": {
+    "hero_overline": "Lifestyle",
+    "hero_heading": "A Life Entirely Different",
+    "climate_overline": "Climate",
+    "climate_heading": "650 Meters Above Sea Level",
+    "climate_body": "Beit Meir sits at approximately 650 meters elevation in the Judean Hills. Mediterranean mountain climate — cool nights even in summer (when Tel Aviv is a humid 28°C, Beit Meir is a dry 22°C). Mild winters — average January 9–12°C — with occasional snowfall. Around 600mm of rain per year, concentrated November–March. Approximately 3,400 hours of sunshine annually.",
+    "nature_overline": "Nature",
+    "nature_heading": "Step Out the Door — Into a Forest",
+    "nature_body": "The moshav sits in the heart of the Martyrs' Forest, surrounded by some of the most beautiful protected nature in Israel. The adjacent HaMasrek Reserve contains Jerusalem pines 170 years old — one of the oldest pine groves in the country. Dozens of marked hiking trails begin literally from the back gate of the moshav: the historic Burma Road trail, Sataf trails with ancient agricultural terraces and springs, Ein Kesalon spring, Nahal Kesalon, the Israel National Trail passes nearby, and routes connecting to Ein Hemed and Sho'eva. For residents, 'going for a walk' means stepping out the door into a forest.",
+    "wine_overline": "Vineyards",
+    "wine_heading": "Wine Country",
+    "wine_body": "The hillsides surrounding Beit Meir host the vineyards of a local winery — a quiet but meaningful detail. Wineries do not plant in just any soil. The combination of altitude (650m), cool nights, mountain air, well-drained limestone-rich earth, and the particular Mediterranean-mountain microclimate makes this region one of Israel's distinguished wine-growing zones. The Judean Hills wine appellation has earned international recognition over the past two decades. The same earth and the same air that grow grapes worth bottling have raised the people who live here.",
+    "day_overline": "A Day in the Life",
+    "day_heading": "Morning in Beit Meir",
+    "day_body": "Shacharit at the local shul with neighbors who have become friends. A drive to a meeting in Jerusalem before the traffic builds. Back for lunch. An afternoon walk through the pines with the dog, children running between the trees. Friday evening — a Shabbat table with neighbors, windows open, the scent of forest. This is not a metaphor. This is what happens here every week.",
+    "air_overline": "Quality of Life",
+    "air_heading": "Air, Quiet, and Dark Skies",
+    "air_body": "At this elevation, this far from Tel Aviv's light pollution, the night sky is genuinely visible. In summer, sleeping with the windows open is not a metaphor — it is what people do here. Noise levels, air quality, and quiet are real luxury indicators in the modern Israeli context.",
+    "cta_heading": "Want to experience it for yourself?",
+    "cta_body": "Leave your details and we will arrange a visit."
+  },
+  "community_page": {
+    "hero_overline": "Community",
+    "hero_heading": "Neighbors Who Became Family",
+    "hero_subheading": "Families from around the world who chose to build their lives in the Land of Israel — together.",
+    "intro": "Beit Meir is a unique religious-Zionist community. Here you will find families from the US, UK, Canada, France, and across the world, all sharing one dream: to live a full Jewish life in the Land of Israel, in a natural setting, within a warm community.",
+    "values_overline": "Values",
+    "values_heading": "What Unites Us",
+    "values": [
+      { "title": "Judaism", "body": "A full Jewish life — Shabbat, holidays, prayer, and Torah study.", "icon": "✡" },
+      { "title": "Zionism", "body": "Love of the Land and its building — not merely as an ideal, but as daily reality.", "icon": "🇮🇱" },
+      { "title": "Family", "body": "A community that honors and strengthens the family.", "icon": "🏡" },
+      { "title": "Education", "body": "Children grow up with values, excellent schooling, and deep roots.", "icon": "📚" },
+      { "title": "Nature", "body": "Living in nature, not near it. Forests, trails, and mountain air.", "icon": "🌿" },
+      { "title": "Quiet", "body": "Far from the noise, close to everything that matters.", "icon": "🕊" }
+    ],
+    "testimonials_overline": "Residents Speak",
+    "testimonials": [
+      { "quote": "We weren't looking for a house. We were looking for a place. Beit Meir is that place.", "name": "The Cohen Family", "origin": "New York, USA" },
+      { "quote": "The Western Wall is 25 minutes away. The children grow up among trees. The neighbors are friends. We couldn't dream of more.", "name": "The Levy Family", "origin": "London, UK" },
+      { "quote": "We were looking for a place that was both Israeli and quiet. Beit Meir is exactly that.", "name": "The Goldberg Family", "origin": "Montreal, Canada" },
+      { "quote": "The home we built here is the home we always dreamed of. A real garden, good neighbors, and mountain air.", "name": "The Shapiro Family", "origin": "Paris, France" }
+    ],
+    "cta_heading": "Want to join the community?",
+    "cta_body": "Leave your details and we will be happy to tell you more.",
+    "religious_overline": "Religious Life",
+    "religious_heading": "Full Religious Infrastructure",
+    "religious_body": "Beit Meir has maintained its unique religious character since its founding in 1950. A central synagogue with regular minyanim, eruv, kosher infrastructure, active Bnei Akiva, and the atmosphere of a community that built itself on the values of Torah and labor. This is not a 'religious neighborhood' — it is a moshav born of faith and that has preserved it.",
+    "education_overline": "Education",
+    "education_heading": "Education at the Highest Level",
+    "education_body": "The Ramot Shapira Educational Center is located on the moshav itself. Yeshivat Harei Yehuda and Ohr Yerushalayim are nearby. Leading religious schools in Jerusalem and Beit Shemesh are a 20-minute drive. For families for whom education is the first priority, Beit Meir offers an infrastructure that is difficult to find elsewhere.",
+    "demographics_overline": "Residents",
+    "demographics_heading": "Who Lives Here",
+    "demographics_body": "About 200 established families — doctors, lawyers, business owners, academics. People who chose to live here deliberately. Turnover is very low — people do not leave Beit Meir. This is one of the best indicators of community quality.",
+    "testimonials_overline": "Residents Speak",
+    "testimonials": [
+      {
+        "quote": "We weren't looking for a house. We were looking for a place. Beit Meir is that place.",
+        "author": "Resident, 14 years in the moshav"
+      },
+      {
+        "quote": "We made aliyah and wanted to build a real home — not an apartment. When we saw Beit Meir, we understood this was what we had been looking for. The community, the nature, the proximity to Jerusalem — everything.",
+        "author": "Oleh family, 8 years in the moshav"
+      },
+      {
+        "quote": "My children grew up here with friends for life. This is not a property — it is a legacy.",
+        "author": "Long-time resident, 22 years in the moshav"
+      }
+    ],
+    "cta_heading": "Want to be part of the community?",
+    "cta_body": "Leave your details and we will be in touch within 24 hours."
+  },
+  "contact_page": {
+    "hero_overline": "Contact",
+    "hero_heading": "We Would Love to Hear From You",
+    "hero_subheading": "Leave your details and we will be in touch personally within 24 hours.",
+    "direct_heading": "Direct Contact",
+    "form_overline": "Inquiry Form",
+    "form_heading": "Leave Your Details",
+    "info_overline": "Direct Contact",
+    "phone_label": "Phone",
+    "whatsapp_label": "WhatsApp",
+    "email_label": "Email",
+    "appointment": "By appointment",
+    "whatsapp_cta": "Open WhatsApp Chat",
+    "whatsapp_message": "Hello, I am interested in receiving details about land acquisition in Moshav Beit Meir.",
+    "process_overline": "Process",
+    "process_steps": [
+      { "num": "01", "title": "Leave Your Details", "body": "Fill out the form and we will be in touch within 24 hours." },
+      { "num": "02", "title": "Introductory Call", "body": "We will speak, answer your questions, and understand what you are looking for." },
+      { "num": "03", "title": "Personal Tour", "body": "We will take you on a tour of the moshav and show you the available plots." },
+      { "num": "04", "title": "Proposal", "body": "We will present a detailed offer and guide you through every step." }
+    ]
+  },
+  "privacy_page": {
+    "overline": "Legal Document",
+    "heading": "Privacy Policy",
+    "last_updated": "Last updated: January 2025",
+    "sections": [
+      { "heading": "1. Introduction", "body": "Moshav Beit Meir ('we', 'our') respects your privacy. This policy explains how we collect, use, and protect the information you provide to us." },
+      { "heading": "2. Information We Collect", "body": "We collect information you provide directly through the contact form: full name, phone number, email address, and preferred contact method. We also collect technical information such as IP address, browser type, and usage data." },
+      { "heading": "3. Use of Information", "body": "The information collected will be used to:\n• Contact you regarding your inquiry\n• Improve our service\n• Send marketing updates (with your consent only)" },
+      { "heading": "4. Sharing of Information", "body": "We do not sell, rent, or share your personal information with third parties, except as necessary to provide the service (such as Airtable for lead management) and as required by law." },
+      { "heading": "5. Cookies", "body": "The site uses cookies to improve your browsing experience. You can manage cookie settings in your browser." },
+      { "heading": "6. Data Security", "body": "We take reasonable security measures to protect your information, including SSL encryption." },
+      { "heading": "7. Your Rights", "body": "You have the right to view, correct, and delete the information we hold about you. To contact us: info@beit-meir.co.il" },
+      { "heading": "8. Contact", "body": "For any questions regarding this privacy policy, please contact us at: info@beit-meir.co.il" }
+    ],
+    "old_heading": "Privacy Policy",
+    "old_last_updated": "Last updated: January 2025",
+    "intro": "Moshav Beit Meir ('we', 'our') respects your privacy. This policy explains how we collect, use, and protect the information you provide to us.",
+    "collection_heading": "Information Collection",
+    "collection_body": "We collect information you provide directly through the contact form: full name, phone number, email address, and preferred contact method. This information is used solely to contact you regarding land acquisition opportunities in Moshav Beit Meir.",
+    "use_heading": "Use of Information",
+    "use_body": "Your information will not be sold, transferred, or shared with third parties for marketing purposes. It will be used solely for personal contact regarding your inquiry.",
+    "cookies_heading": "Cookies and Analytics",
+    "cookies_body": "We use Plausible Analytics — a privacy-friendly analytics system that does not collect personal information and does not require GDPR consent. We may use Meta Pixel for targeted advertising — if so, a notice will be displayed at the bottom of the site.",
+    "rights_heading": "Your Rights",
+    "rights_body": "You may at any time request to view, correct, or delete the information you have provided. For inquiries: contact us through the site form.",
+    "contact_heading": "Contact",
+    "contact_body": "For questions regarding the privacy policy, contact us through the contact form."
+  },
+  "whatsapp": {
+    "default_message": "Hello, I am interested in receiving details about land acquisition in Moshav Beit Meir.",
+    "button_label": "WhatsApp Us"
+  },
+  "cookie_consent": {
+    "text": "We use Meta Pixel for targeted advertising.",
+    "accept": "Got it",
+    "decline": "No thanks"
+  },
+  "lang_switcher": {
+    "he": "עברית",
+    "en": "EN"
+  }
+}

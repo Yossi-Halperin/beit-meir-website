@@ -1,0 +1,7 @@
+{
+  "pillars": [
+    { "id": "community", "icon": "users" },
+    { "id": "education", "icon": "book-open" },
+    { "id": "nature", "icon": "tree-pine" }
+  ]
+}

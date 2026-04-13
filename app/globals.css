@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #0F0E0C;
+  --bg-secondary: #1A1815;
+  --bg-tertiary: #252220;
+
+  /* Text */
+  --text-primary: #F5F1EA;
+  --text-secondary: #C9C0AE;
+  --text-tertiary: #8A8275;
+
+  /* Accent */
+  --accent: #B8924A;
+  --accent-hover: #D1A85C;
+  --accent-muted: #5C4A28;
+
+  /* Earth tones */
+  --olive-deep: #2D3320;
+  --stone-warm: #6B5D4A;
+  --terra: #8B4A2B;
+
+  /* Functional */
+  --border: #2A2622;
+  --border-strong: #3D3833;
+  --success: #6B8E4E;
+  --error: #A84A2B;
+
+  /* Motion */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html[lang="he"] body {
+    font-family: var(--font-heebo), sans-serif;
+    line-height: 1.7;
+  }
+
+  html[lang="en"] body {
+    font-family: var(--font-inter), sans-serif;
+    line-height: 1.65;
+  }
+
+  /* Hebrew headings */
+  html[lang="he"] h1,
+  html[lang="he"] h2,
+  html[lang="he"] h3,
+  html[lang="he"] h4 {
+    font-family: var(--font-frank-ruhl), serif;
+    line-height: 1.15;
+  }
+
+  /* English headings */
+  html[lang="en"] h1,
+  html[lang="en"] h2,
+  html[lang="en"] h3,
+  html[lang="en"] h4 {
+    font-family: var(--font-cormorant), serif;
+    line-height: 1.15;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--accent-muted);
+    color: var(--text-primary);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--stone-warm);
+  }
+}
+
+@layer components {
+  /* Section container */
+  .section-container {
+    @apply max-w-content mx-auto px-6 md:px-10 lg:px-16;
+  }
+
+  /* Overline label */
+  .overline-label {
+    @apply text-overline uppercase tracking-widest text-accent font-medium;
+  }
+
+  /* Brass rule */
+  .brass-rule {
+    @apply w-12 h-px bg-accent;
+  }
+
+  /* Input base */
+  .input-base {
+    @apply w-full bg-bg-secondary border border-border rounded-sm px-4 py-3
+           text-text-primary placeholder:text-text-tertiary
+           focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent
+           transition-colors duration-300;
+  }
+
+  /* Button primary */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-accent hover:bg-accent-hover text-bg-primary
+           px-8 py-4 text-sm font-medium tracking-wide uppercase
+           transition-all duration-300 ease-luxury
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Button ghost */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2
+           border border-accent text-accent hover:bg-accent hover:text-bg-primary
+           px-8 py-4 text-sm font-medium tracking-wide uppercase
+           transition-all duration-300 ease-luxury;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply w-full h-px bg-border;
+  }
+}
+
+@layer utilities {
+  /* Ease luxury */
+  .ease-luxury {
+    transition-timing-function: var(--ease-luxury);
+  }
+
+  /* Text gradient gold */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #B8924A 0%, #D1A85C 50%, #B8924A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Backdrop blur dark */
+  .backdrop-dark {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}
+
+/* Mapbox overrides */
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+/* Framer Motion will-change optimization */
+[data-framer-component-type] {
+  will-change: transform, opacity;
+}

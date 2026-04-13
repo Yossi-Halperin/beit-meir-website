@@ -1,0 +1,16 @@
+{
+  "coordinates": {
+    "lat": 31.7898,
+    "lng": 35.0356
+  },
+  "destinations": [
+    { "id": "jerusalem", "km": 15, "min": 20, "featured": false },
+    { "id": "kotel", "km": 20, "min": 25, "featured": true },
+    { "id": "airport", "km": 30, "min": 25, "featured": false },
+    { "id": "beit_shemesh", "km": 10, "min": 15, "featured": false },
+    { "id": "modiin", "km": 25, "min": 25, "featured": false },
+    { "id": "tel_aviv", "km": 50, "min": 45, "featured": false },
+    { "id": "mevaseret", "km": 12, "min": 15, "featured": false },
+    { "id": "dead_sea", "km": 50, "min": 50, "featured": false }
+  ]
+}
