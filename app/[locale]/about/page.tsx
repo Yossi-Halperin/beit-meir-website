@@ -22,16 +22,16 @@ export async function generateMetadata({
 
 const ABOUT_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=1200&q=80",
-    alt: "Martyrs Forest Jerusalem pines",
+    src: "/images/gallery/gallery-2.jpg",
+    alt: "Ancient pine forest path in Martyrs Forest — morning light",
   },
   {
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-    alt: "Judean Hills aerial view",
+    src: "/images/gallery/gallery-1.jpg",
+    alt: "Aerial view of Jerusalem Hills at golden hour",
   },
   {
-    src: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=1200&q=80",
-    alt: "Mountain landscape golden hour",
+    src: "/images/gallery/gallery-4.jpg",
+    alt: "Sunset panorama over Jerusalem Hills with terraced olive groves",
   },
 ];
 
@@ -83,7 +83,7 @@ export default async function AboutPage({
       <PageHero
         overline={t.hero_overline}
         heading={t.hero_heading}
-        imageSrc="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=1600&q=80"
+        imageSrc="/images/gallery/gallery-2.jpg"
         imageAlt="Beit Meir moshav in the Judean Hills"
       />
 

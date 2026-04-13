@@ -16,35 +16,23 @@ export default function HeroVideo() {
       style={{ minHeight: "700px" }}
       aria-label={isRTL ? "גיבור האתר" : "Hero section"}
     >
-      {/* Background video / image */}
+      {/* Background image */}
       <div className="absolute inset-0 z-0">
-        {/* TODO: Replace with Bunny.net video URL */}
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/images/hero-poster.jpg"
+        {/* Hero poster — drone footage of Jerusalem Hills at twilight */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/hero-poster.jpg"
+          alt=""
           aria-hidden="true"
-        >
-          {/* Placeholder: will be replaced with actual drone footage */}
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+          className="w-full h-full object-cover"
+          style={{ objectPosition: "center 40%" }}
+        />
         {/* Dark overlay */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(15,14,12,0.4) 0%, rgba(15,14,12,0.85) 100%)",
-          }}
-        />
-        {/* Fallback gradient when no video */}
-        <div
-          className="absolute inset-0 -z-10"
-          style={{
-            background:
-              "linear-gradient(135deg, #0F0E0C 0%, #1A1815 40%, #252220 70%, #2D3320 100%)",
+              "linear-gradient(180deg, rgba(15,14,12,0.3) 0%, rgba(15,14,12,0.75) 100%)",
           }}
         />
       </div>

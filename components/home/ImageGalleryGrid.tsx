@@ -2,29 +2,29 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import RevealOnScroll from "@/components/ui/RevealOnScroll";
 
-// Unsplash placeholder images — TODO: Replace with real photography
+// Local AI-generated photography of Jerusalem Hills & Beit Meir landscape
 const GALLERY_IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=800&q=80",
-    alt: "Judean Hills forest — Jerusalem pine trees",
+    src: "/images/gallery/gallery-1.jpg",
+    alt: "Aerial view of Jerusalem Hills at golden hour — pine forest and vineyard terraces",
     className: "col-span-2 row-span-2",
     priority: true,
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-    alt: "Jerusalem stone wall detail",
+    src: "/images/gallery/gallery-2.jpg",
+    alt: "Ancient pine forest path in Martyrs Forest — morning light",
     className: "col-span-1 row-span-1",
     priority: false,
   },
   {
-    src: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=600&q=80",
-    alt: "Olive grove golden hour",
+    src: "/images/gallery/gallery-5.jpg",
+    alt: "Luxury stone terrace overlooking Jerusalem Hills valley",
     className: "col-span-1 row-span-1",
     priority: false,
   },
   {
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-    alt: "Aerial view of Israeli hills at golden hour",
+    src: "/images/gallery/gallery-4.jpg",
+    alt: "Sunset panorama over Jerusalem Hills with terraced olive groves",
     className: "col-span-3 row-span-1",
     priority: false,
   },
@@ -67,7 +67,6 @@ export default function ImageGalleryGrid() {
                 />
                 {/* Subtle overlay on hover */}
                 <div className="absolute inset-0 bg-bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-
               </div>
             ))}
           </div>

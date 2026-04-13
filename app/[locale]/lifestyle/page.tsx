@@ -19,10 +19,10 @@ export async function generateMetadata({
 }
 
 const LIFESTYLE_IMAGES = [
-  "https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=1200&q=80",
-  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-  "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=1200&q=80",
+  "/images/gallery/gallery-3.jpg",
+  "/images/gallery/gallery-1.jpg",
+  "/images/gallery/gallery-5.jpg",
+  "/images/gallery/gallery-2.jpg",
 ];
 
 export default async function LifestylePage({
@@ -78,7 +78,7 @@ export default async function LifestylePage({
       <PageHero
         overline={t.hero_overline}
         heading={t.hero_heading}
-        imageSrc="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=1600&q=80"
+        imageSrc="/images/gallery/gallery-3.jpg"
         imageAlt="Beit Meir lifestyle"
       />
 

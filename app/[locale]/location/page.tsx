@@ -35,7 +35,7 @@ export default async function LocationPage({
         overline={t.hero_overline}
         heading={t.hero_heading}
         subheading={t.hero_subheading}
-        imageSrc="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1600&q=80"
+        imageSrc="/images/gallery/gallery-1.jpg"
         imageAlt="Judean Hills aerial view"
       />
 
@@ -90,11 +90,6 @@ export default async function LocationPage({
                 <div className="bg-bg-secondary/95 border border-accent/40 px-4 py-2 text-sm text-accent whitespace-nowrap">
                   {t.map_heading}
                 </div>
-              </div>
-
-              {/* TODO badge */}
-              <div className="absolute bottom-4 end-4 bg-bg-primary/80 px-3 py-1.5 text-caption text-text-tertiary border border-border">
-                TODO: Mapbox interactive map
               </div>
 
               {/* Caption */}

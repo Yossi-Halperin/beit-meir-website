@@ -34,7 +34,7 @@ export default async function CommunityPage({
         overline={t.hero_overline}
         heading={t.hero_heading}
         subheading={t.hero_subheading}
-        imageSrc="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?w=1600&q=80"
+        imageSrc="/images/gallery/gallery-2.jpg"
         imageAlt="Beit Meir community"
       />
 
