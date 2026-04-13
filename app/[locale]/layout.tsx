@@ -11,6 +11,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/ui/WhatsAppButton";
 import CookieConsent from "@/components/ui/CookieConsent";
+import { HomeJsonLd } from "@/components/seo/JsonLd";
+import { PlausibleAnalytics, MetaPixel } from "@/components/seo/Analytics";
 import "@/app/globals.css";
 
 const frankRuhl = Frank_Ruhl_Libre({
@@ -49,6 +51,7 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "meta.home" });
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://beit-meir.co.il";
 
   return {
     title: {
@@ -56,18 +59,19 @@ export async function generateMetadata({
       template: `%s | ${locale === "he" ? "מושב בית מאיר" : "Moshav Beit Meir"}`,
     },
     description: t("description"),
-    metadataBase: new URL("https://beit-meir.co.il"),
+    metadataBase: new URL(baseUrl),
     openGraph: {
       title: t("title"),
       description: t("description"),
       type: "website",
       locale: locale === "he" ? "he_IL" : "en_US",
+      siteName: locale === "he" ? "מושב בית מאיר" : "Moshav Beit Meir",
       images: [
         {
           url: "/images/og/og-home.jpg",
           width: 1200,
           height: 630,
-          alt: locale === "he" ? "מושב בית מאיר" : "Moshav Beit Meir",
+          alt: locale === "he" ? "מושב בית מאיר — קרקעות יוקרה בהרי ירושלים" : "Moshav Beit Meir — Luxury Land in the Judean Hills",
         },
       ],
     },
@@ -81,11 +85,18 @@ export async function generateMetadata({
       languages: {
         he: "/he",
         en: "/en",
+        "x-default": "/he",
       },
     },
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
   };
 }
@@ -113,13 +124,27 @@ export default async function LocaleLayout({
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* Preload hero image */}
+        {/* Preload hero display font for Hebrew — spec §10 */}
+        {isRTL && (
+          <link
+            rel="preload"
+            href="https://fonts.gstatic.com/s/frankruhllibre/v14/j8_y6-zQ3rXpceZj9cqnVhF5NH-iDy_qMkA.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        )}
+        {/* Preload hero poster image */}
         <link
           rel="preload"
           href="/images/hero-poster.jpg"
           as="image"
           type="image/jpeg"
         />
+        {/* Schema.org JSON-LD — spec §9.3 */}
+        <HomeJsonLd locale={locale} />
+        {/* Plausible Analytics — spec §3, deferred */}
+        <PlausibleAnalytics />
       </head>
       <body className="bg-bg-primary text-text-primary antialiased">
         <NextIntlClientProvider messages={messages}>
@@ -128,6 +153,8 @@ export default async function LocaleLayout({
           <Footer />
           <WhatsAppButton />
           <CookieConsent />
+          {/* Meta Pixel — deferred after interaction or 3s — spec §10 */}
+          <MetaPixel />
         </NextIntlClientProvider>
       </body>
     </html>

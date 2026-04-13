@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.8 }}
         transition={{ delay: 3, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-        className={`fixed bottom-6 z-40 md:hidden ${isRTL ? "left-4" : "right-4"}`}
+        className={`fixed bottom-6 z-40 md:hidden ${isRTL ? "right-4" : "left-4"}`}
       >
         <div className="relative flex items-center gap-2">
           <a

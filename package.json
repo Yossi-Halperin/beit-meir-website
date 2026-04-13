@@ -13,7 +13,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.8",
     "lucide-react": "^0.414.0",
-    "mapbox-gl": "^3.5.2",
+    "mapbox-gl": "^3.21.0",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
     "react": "^18",
@@ -24,7 +24,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/mapbox-gl": "^3.4.0",
+    "@types/mapbox-gl": "^3.4.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
